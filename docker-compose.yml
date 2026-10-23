@@ -61,7 +61,7 @@ services:
     # In local mode, expose port directly
     # In production mode, Caddy handles external access
     ports:
-      - "${APP_PORT:-8000}:${APP_PORT:-8001}"
+      - "${APP_PORT:-8001}:${APP_PORT:-8000}"
 
   # Caddy reverse proxy with automatic HTTPS
   # Only runs when using production profile: docker-compose --profile production up
